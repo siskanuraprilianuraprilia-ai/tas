@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TasKu - Toko Tas Berkualitas</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f5f2;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #5c4033;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f2c6a0;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: #ead9cc;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            color: #5c4033;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #5c4033;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .btn:hover {
+            background-color: #7b5745;
+        }
+
+        /* Produk */
+        .produk {
+            padding: 50px 8%;
+            text-align: center;
+        }
+
+        .produk h2 {
+            color: #5c4033;
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        .container-produk {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            width: 280px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            color: #5c4033;
+            margin: 15px 0 10px;
+        }
+
+        .harga {
+            font-weight: bold;
+            color: #9b5c3d;
+            margin-bottom: 15px;
+        }
+
+        /* Keunggulan */
+        .keunggulan {
+            background-color: #ead9cc;
+            padding: 50px 8%;
+            text-align: center;
+        }
+
+        .keunggulan h2 {
+            color: #5c4033;
+            margin-bottom: 30px;
+        }
+
+        .fitur {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .fitur div {
+            background-color: white;
+            padding: 25px;
+            width: 250px;
+            border-radius: 10px;
+        }
+
+        .fitur h3 {
+            color: #5c4033;
+            margin-bottom: 10px;
+        }
+
+        /* Kontak */
+        .kontak {
+            padding: 50px 8%;
+            text-align: center;
+        }
+
+        .kontak h2 {
+            color: #5c4033;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #5c4033;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>TasKu</h1>
+
+        <nav>
+            <a href="#beranda">Beranda</a>
+            <a href="#produk">Produk</a>
+            <a href="#keunggulan">Keunggulan</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- Beranda -->
+    <section class="hero" id="beranda">
+        <h2>Tas Berkualitas untuk Gaya Sehari-hari</h2>
+
+        <p>
+            Temukan berbagai pilihan tas yang stylish, nyaman,
+            dan cocok digunakan untuk berbagai aktivitas.
+        </p>
+
+        <a href="#produk" class="btn">Lihat Produk</a>
+    </section>
+
+    <!-- Produk -->
+    <section class="produk" id="produk">
+        <h2>Produk Tas Kami</h2>
+
+        <div class="container-produk">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80"
+                     alt="Tas Ransel">
+
+                <h3>Tas Ransel</h3>
+
+                <p class="harga">Rp150.000</p>
+
+                <p>
+                    Tas ransel dengan desain praktis dan cocok
+                    digunakan untuk sekolah maupun bepergian.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80"
+                     alt="Tas Fashion">
+
+                <h3>Tas Fashion</h3>
+
+                <p class="harga">Rp175.000</p>
+
+                <p>
+                    Tas dengan desain modern dan elegan yang cocok
+                    digunakan untuk kegiatan sehari-hari.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=600&q=80"
+                     alt="Tas Selempang">
+
+                <h3>Tas Selempang</h3>
+
+                <p class="harga">Rp125.000</p>
+
+                <p>
+                    Tas selempang yang ringan dan praktis untuk
+                    membawa barang-barang penting.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Keunggulan -->
+    <section class="keunggulan" id="keunggulan">
+        <h2>Kenapa Memilih TasKu?</h2>
+
+        <div class="fitur">
+
+            <div>
+                <h3>⭐ Berkualitas</h3>
+                <p>
+                    Menggunakan bahan yang kuat dan nyaman digunakan.
+                </p>
+            </div>
+
+            <div>
+                <h3>🎨 Desain Menarik</h3>
+                <p>
+                    Memiliki berbagai desain modern yang cocok untuk semua aktivitas.
+                </p>
+            </div>
+
+            <div>
+                <h3>💰 Harga Terjangkau</h3>
+                <p>
+                    Produk berkualitas dengan harga yang ramah di kantong.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section class="kontak" id="kontak">
+        <h2>Hubungi Kami</h2>
+
+        <p>📱 WhatsApp: 08xxxxxxxxxx</p>
+        <p>📧 Email: tasku@gmail.com</p>
+        <p>📍 Alamat: Jl. Contoh No. 10, Indonesia</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 TasKu - Toko Tas Berkualitas</p>
+    </footer>
+
+</body>
+</html>
